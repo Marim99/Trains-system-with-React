@@ -1,0 +1,35 @@
+.trains-list {
+  position: relative;
+  top: 200px;
+}
+.train-container {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  position: relative;
+  height: 50px;
+}
+.train-container .train-header {
+  display: flex;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.train-container .train-header .train-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+}
+.train-container .train-header .train-state {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1.25rem;
+  font-size: 1rem;
+}

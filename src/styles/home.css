@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.home-cover {
+  height: 100vh;
+  background-image: url("../utilities/images/train.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.home-cover1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 65%;
+  color: #fff;
+}

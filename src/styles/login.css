@@ -1,0 +1,80 @@
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.login-cover {
+  height: 100vh;
+  background-image: url("../utilities/images/train.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.login-cover1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.auth-inner {
+  position: absolute;
+  top: 25%;
+  margin-right: -50%;
+  margin: 0;
+  background: none;
+}
+.login-text {
+  color: #6195ff;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  text-transform: capitalize;
+  padding-bottom: 40px;
+  font-weight: 800;
+  font-size: 2.3rem;
+}
+.login-text span {
+  color: #fff;
+}
+
+.auth-inner .form-group {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+.auth-inner .form-group input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e7e7e7;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.auth-inner .form-group input:focus,
+.auth-inner .form-group input:valid {
+  border-color: #6195ff;
+}
+.login-btn {
+  color: #fff !important;
+  background-color: #6195ff;
+  border: none;
+  display: inline-block;
+  position: absolute;
+  border-radius: 10px;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: 0.3s;
+  width: 100px;
+}
+.login-btn:hover {
+  opacity: 1;
+}
