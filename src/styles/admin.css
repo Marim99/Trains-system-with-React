@@ -1,0 +1,25 @@
+.add {
+  position: absolute;
+  top: 150px;
+  left: 75px;
+  margin: 0 auto;
+  width: 150px;
+  height: 60px;
+}
+
+#main-container {
+  place-items: center center;
+}
+
+#sign-in-form {
+  max-width: 330px;
+}
+
+.bootstrap-logo {
+  width: 72px;
+  height: 72px;
+}
+
+.form-control:focus {
+  z-index: 5;
+}

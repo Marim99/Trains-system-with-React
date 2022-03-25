@@ -5,16 +5,21 @@ import NavbarComp from "./components/NavbarComp";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import TrainList from "./components/TrainsList";
+import Admin from "./components/Admin";
+import TrainContextProvider from "./context/context";
 
 function App() {
   return (
     <Router>
-      <NavbarComp />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/TrainsList" element={<TrainList />} />
-      </Routes>
+      <TrainContextProvider>
+        <NavbarComp />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/TrainsList" element={<TrainList />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </TrainContextProvider>
     </Router>
   );
 }

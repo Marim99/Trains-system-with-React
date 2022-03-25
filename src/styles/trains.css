@@ -33,3 +33,20 @@
   padding: 0.9rem 1.25rem;
   font-size: 1rem;
 }
+.train-alarm-header {
+  position: absolute;
+  right: 0px;
+}
+.train-alarm-header,
+.train-id-header {
+  font-size: 30px;
+  margin: 5px;
+  color: #6195ff;
+}
+.delete-icon {
+  cursor: pointer;
+  transition: 1ms ease-in;
+}
+.delete-icon:hover {
+  transform: scale(1.09);
+}
