@@ -7,8 +7,11 @@ import Login from "./components/Login";
 import TrainList from "./components/TrainsList";
 import Admin from "./components/Admin";
 import TrainContextProvider from "./context/context";
+import AboutUs from "./components/AboutUs";
+import useFetch from "./useFetch";
 
 function App() {
+  useFetch("https://jsonplaceholder.typicode.com/posts");
   return (
     <Router>
       <TrainContextProvider>
@@ -18,6 +21,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/TrainsList" element={<TrainList />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </TrainContextProvider>
     </Router>

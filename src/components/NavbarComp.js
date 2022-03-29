@@ -28,13 +28,13 @@ const NavbarComp = () => {
             <a className="nav-link" href="/" data-rr-ui-event-key="/">
               Home
             </a>
-            <a
+            <Link
               className="nav-link"
-              href="#features"
+              to="/aboutus"
               data-rr-ui-event-key="#features"
             >
               About
-            </a>
+            </Link>
 
             <Link className="nav-link" to={"/Login"}>
               <button className="btn" id="login-button">

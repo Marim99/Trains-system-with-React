@@ -1,0 +1,158 @@
+/* ---------------------2-Gneral CSS style--------------------------- */
+*{
+    margin:0;   
+    padding:0;
+    box-sizing: border-box;   /* css3>> 34an my5ale4 al border aw al padding yzawedo alwidth bta3 al 3onsor w ya5od mn al width ally mawgod*/
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.container{
+    width:80%;
+    margin:auto;  /*34an ywastan al div fe nos al bage*/
+}
+
+.clear{
+    clear:both;     /*to solve float problem*/
+}
+.overlay{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.7);
+}
+.hover-opacity{
+    transition : opacity 0.8s;
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: montserrat,sans-serif;
+}
+button{
+    font-family: inherit;   /*ya3ny ya5od al font family bta3t kol al mawk3*/
+}
+
+.section-header{
+    text-align: center;
+}
+.section-header .section-title{
+    font-size:35px;
+    text-transform: capitalize;
+}
+.section-header .section-title::after{
+    content:" ";
+    width:40px;
+    height: 3px;
+    background-color: #6195ff;
+    display:block;
+    margin:10px auto 70px auto ;
+    
+    
+}
+
+.pd-y{
+    padding: 120px 0;
+    overflow: auto;
+}
+
+a{text-decoration: none;}
+
+.mg{margin:0 5%;}
+
+/* ---------------------3.3-Portofolio--------------------- */
+.flexBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.portofolio{
+    background-color: #f9f9f9;
+    /* background-image:url('images/10.jpg'); */
+    /* background-repeat: no-repeat; */
+    
+
+}
+.portofolio-item{
+    width:30%;
+    margin-bottom: 5%; 
+    position: relative;
+}
+.portofolio-item{
+    padding:15px;
+    height: 300px;
+
+}
+
+.portofolio-item img{
+    position: absolute;
+    width:100%; 
+    height:100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* margin:5%; */
+
+
+}
+
+.portofolio-item .layer-content{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0,0,0,0.5);
+    opacity:0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.portofolio-item:hover .layer-content{
+    opacity:1;
+    visibility: visible;
+}
+.layer-info{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+    line-height: 1.5;
+}
+.layer-content-title{
+    font-size: 20px;
+    color:white;
+    margin-bottom: 5px;
+    transition:top 0.5s;
+    transition-delay: 0.3s;
+    list-style-position: inside;
+    font-size: 18px;
+}
+.layer-content .category{
+    color:#6195ff;
+    text-transform: uppercase;
+    transition:top 0.5s;
+    transition-delay: 0s;
+ 
+}
+
+.layer-content .category,
+.layer-content-title{
+    position:relative;
+    top:10px;
+    opacity:0;
+}
+
+.portofolio-item:hover .layer-content .category,
+.portofolio-item:hover .layer-content-title{
+    top:0px;
+    opacity:1;
+}
