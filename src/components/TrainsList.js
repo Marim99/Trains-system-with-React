@@ -1,11 +1,13 @@
 import Train from "./Train";
 import "../styles/trains.css";
-import { trains } from "../utilities/trains";
-import { useContext } from "react";
+//import { trains } from "../utilities/trains";
+import { useContext, useEffect, useState } from "react";
 import { TrainContext } from "../context/context";
+import useFetch from "../useFetch";
 const TrainList = ({ isAdmin }) => {
   const { data } = useContext(TrainContext);
-
+  const trains = useFetch("https://245e-156-218-102-7.ngrok.io/allTrains");
+  console.log(trains);
   return (
     <div className="container trains-list">
       <div className="container train-container">
@@ -14,8 +16,8 @@ const TrainList = ({ isAdmin }) => {
           <h1 className="train-alarm-header">Train Alarm</h1>
         </div>
       </div>
-      {data &&
-        data.map((train) => (
+      {trains &&
+        trains.map((train) => (
           <Train train={train} key={train.id} isAdmin={isAdmin} />
         ))}
     </div>

@@ -9,9 +9,11 @@ import Admin from "./components/Admin";
 import TrainContextProvider from "./context/context";
 import AboutUs from "./components/AboutUs";
 import useFetch from "./useFetch";
-
+import axios from "axios";
 function App() {
-  useFetch("https://jsonplaceholder.typicode.com/posts");
+  /*window.axios.defaults.headers.common["crossDomain"] = true;
+  window.axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
+  window.axios.defaults.headers.common["x-csrfToken"] = token;*/
   return (
     <Router>
       <TrainContextProvider>

@@ -2,6 +2,7 @@ import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import "../styles/model.css";
 export default function ModelSensors(props) {
+  console.log(props.train);
   return (
     <Modal
       {...props}
@@ -24,7 +25,7 @@ export default function ModelSensors(props) {
                 alt=""
               />
               <h4 className="sensor-name">Speed</h4>
-              <p className="sensor-value">{props.train.train.speed} Km/hr</p>
+              <p className="sensor-value">{props.train.sensors.speed} Km/hr</p>
             </div>
             <div className="col-md-3 col-6 sensor-card">
               <img
@@ -32,7 +33,7 @@ export default function ModelSensors(props) {
                 alt=""
               />
               <h4 className="sensor-name">Door state</h4>
-              <p className="sensor-value">{props.train.train.doorState}</p>
+              <p className="sensor-value">{props.train.sensors.doorState}</p>
             </div>
             <div className="col-md-3 col-6 sensor-card">
               <img
@@ -40,7 +41,7 @@ export default function ModelSensors(props) {
                 alt=""
               />
               <h4 className="sensor-name">location</h4>
-              <p className="sensor-value">{props.train.train.gps}</p>
+              <p className="sensor-value">{props.train.sensors.GPS}</p>
             </div>
             <div className="col-md-3 col-6 sensor-card">
               <img
@@ -51,7 +52,7 @@ export default function ModelSensors(props) {
                 alt=""
               />
               <h4 className="sensor-name">humidity</h4>
-              <p className="sensor-value">{props.train.train.humidity}%</p>
+              <p className="sensor-value">{props.train.sensors.hummidity}%</p>
             </div>
             <div className="col-md-3 col-6 sensor-card">
               <img
@@ -62,7 +63,7 @@ export default function ModelSensors(props) {
                 alt=""
               />
               <h4 className="sensor-name">Alarm</h4>
-              <p className="sensor-value">{props.train.train.alarm}</p>
+              <p className="sensor-value">{String(props.train.alarm)}</p>
             </div>
             <div className="col-md-3 col-6 sensor-card">
               <img
@@ -70,7 +71,7 @@ export default function ModelSensors(props) {
                 alt=""
               />
               <h4 className="sensor-name">Lights</h4>
-              <p className="sensor-value">{props.train.train.lightsState}</p>
+              <p className="sensor-value">{props.train.sensors.lightState}</p>
             </div>
           </div>
         </div>

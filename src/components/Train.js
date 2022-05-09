@@ -13,7 +13,7 @@ const Train = ({ train, isAdmin }) => {
           <button className="train-btn" onClick={() => setModalShow(true)}>
             {train.id}
           </button>
-          <span className="train-state">{train.train.alarm}</span>
+          <span className="train-state">{String(train.alarm)}</span>
           {isAdmin && (
             <span onClick={() => removeTrain(train.id)} className="delete-icon">
               <img src={icon} alt="da" width="30" height="30" />
@@ -21,11 +21,13 @@ const Train = ({ train, isAdmin }) => {
           )}
         </h2>
       </div>
-      <ModelSensors
-        train={train}
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
+      {
+        <ModelSensors
+          train={train}
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+      }
     </Fragment>
   );
 };
