@@ -14,6 +14,7 @@ function useFetch(url) {
         console.log(e);
       });
   }, [url]);
+
   return trains;
 }
 

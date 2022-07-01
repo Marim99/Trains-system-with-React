@@ -6,7 +6,7 @@ import { TrainContext } from "../context/context";
 import useFetch from "../useFetch";
 const TrainList = ({ isAdmin }) => {
   const { data } = useContext(TrainContext);
-  const trains = useFetch("https://245e-156-218-102-7.ngrok.io/allTrains");
+  const trains = useFetch("http://b57c-196-159-6-17.ngrok.io/allTrains");
   console.log(trains);
   return (
     <div className="container trains-list">

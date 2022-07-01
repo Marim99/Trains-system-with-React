@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/login.css";
-import axios from "axios";
-
 const Login = () => {
   /* window.axios = require("axios");
   window.axios.defaults.headers["crossDomain"] = true;
